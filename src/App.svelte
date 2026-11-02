@@ -29,7 +29,7 @@
 
       if (res) {
         let changed = false;
-        if (res.level >= 10000 && level < 10000) yay = true;
+        if (res.friends >= 10000 && friends < 10000) yay = true;
         if (res.friends !== friends) changed = true;
         friends = res.friends;
         let newLevel = Math.round(res.level * 10 ** digits) / 10 ** digits;
